@@ -35,3 +35,8 @@ let logMessage = (message) => {
 }
 
 let sum = (a, b) => a + b;
+
+// passing functions as parameters also called as callbacks
+let execFunction = (sum) =>{
+    console.log(sum(2, 5));
+}

@@ -6,10 +6,12 @@ let height = 170.5;
 
 // special values - Infinity and NaN
 // Infinity is the mathematical infinity value
-alert( Infinity ); // Infinity
+console.log(Infinity);
+ // Infinity
 
 // NaN is the value due to an incorrect operation
-alert( "not a number" / 2 );  
+console.log("not a number" / 2);
+
 //NaN, such division is erroneous
 
 // 2. String
@@ -24,7 +26,8 @@ let combined_2 = `${name} ${address}`;
 let nameFieldChecked = true; // yes, name field is checked
 let ageFieldChecked = false; // no, age field is not checked
 let isGreater = 4 > 1;
-alert( isGreater ); // true (the comparison result is "yes")
+console.log(isGreater);
+ // true (the comparison result is "yes")
 
 // 4. null
 // In JavaScript, null is not a “reference to a non-existing object” or a “null pointer” like in some other languages.
@@ -36,7 +39,8 @@ let somthing = null;
 // If a variable is declared, but not assigned, then its value is undefined:
 let x;
 
-alert(x); // shows "undefined"
+console.log(x);
+ // shows "undefined"
 
 // 6. Object
 // Collection of other datatypes

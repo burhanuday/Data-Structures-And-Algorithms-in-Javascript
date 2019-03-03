@@ -54,14 +54,14 @@ let a = 2 + 2;
 
 switch (a) {
     case 3:
-        alert('Too small');
+        console.log('Too small');
         break;
     case 4:
-        alert('Exactly!');
+        console.log('Exactly!');
         break;
     case 5:
-        alert('Too large');
+        console.log('Too large');
         break;
     default:
-        alert("I don't know such values");
+        console.log("I don't know such values");
 }

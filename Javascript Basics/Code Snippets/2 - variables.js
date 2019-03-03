@@ -2,7 +2,7 @@
 let text;
 text = "Hello World";
 
-alert(text);
+console.log(text);
 
 // you can also do
 let number = 1, name = "burhan";

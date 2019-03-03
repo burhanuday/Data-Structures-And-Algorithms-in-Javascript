@@ -8,7 +8,7 @@ if (hour < 10 || hour > 18) {
 }
 
 // 2. AND
-let hour = 12;
+hour = 12;
 let minute = 30;
 
 if (hour == 12 && minute == 30) {
