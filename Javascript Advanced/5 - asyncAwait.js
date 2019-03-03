@@ -1,11 +1,24 @@
-async function sayHi() {
+async function f() {
     let promise = new Promise((resolve, reject) => {
-        setTimeout(() => resolve("done!"), 1000)
+        setTimeout(() => reject("Error!"), 1000);
     });
-
-    let result = await promise;
-    console.log(result);
+    return await promise; // wait till the promise resolves (*)
 }
 
-sayHi();
-console.log("burhan");
+f().then(() => console.log("after")).catch(() => { console.error("error") })
+
+// using arrow functions and returning a promise directly
+const scaryClown = () => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve('🤡');
+        }, 2000);
+    });
+}
+
+const msg = async () => {
+    const msg = await scaryClown();
+    console.log('Message:', msg);
+}
+
+msg();
